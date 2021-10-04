@@ -59,6 +59,7 @@ async function remove(id) {
   //what does it return?
   //what to do to give back the deleted thing?
   return db('posts').where('id', id).del()
+  //Answer...
   // const deletedPost = await getById(id)
   // await db("posts").where("id",id).delete()
   // return deletedPost
