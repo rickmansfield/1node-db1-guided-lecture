@@ -57,6 +57,8 @@ function update(id,{title,contents}) {
 async function remove(id) {
     //test this way
   //return "update wired"
+
+  //DELETE from posts WHERE id = 3;
   //then ...
   //what does it return?
   //what to do to give back the deleted thing?
