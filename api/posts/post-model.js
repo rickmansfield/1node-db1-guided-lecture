@@ -23,6 +23,7 @@ function getById(id) {
 }
 
 async function create({title, contents}) {
+  //INSERT INTO posts (title, contents) VALUES ('newtitle', 'newvalue')
   const [id] = await db("posts").insert({title,contents})//returns [number] an array with the id of the new item
   console.log(id);
   const theGoodStuff = await getById(id)
@@ -37,9 +38,10 @@ async function create({title, contents}) {
 // }
 
 function update(id,{title,contents}) {
-  //test this way
+  //test if wired ...this way
   //return "update wired"
 
+ //UPDATE posts SET title='foo', contents = 'bar' WHERE id = 1;
   // const stuff = await db('posts').where('id', id).update({ title, contents })
   // console.log(stuff);
   // return stuff;// will return the number of records updated. and is basically useless. so we have to alter the code like this... 
