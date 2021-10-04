@@ -34,7 +34,7 @@ In this project we will cover the basics of `Structure Query Language (SQL)`, `R
 - 7 ``` SELECT * FROM Products ORDER BY CategoryID ASC, Price DESC; ```
 
 - ``` INSERT INTO Shippers (ShipperName, Phone) VALUES ('blah', '(123) 456-7890'); ```
-- 8 ``` INSERT INTO Shippers (ShipperName) VALUES ('UPS'); -- You have made changes to the database. Rows affected: 1 was the response and the empty phone field has null in it now```
+- 8 ``` INSERT INTO Shippers (ShipperName) VALUES ('UPS'); -- You have made changes to the database. Rows affected: 1 was the response and the empty phone field has null in it now ```
 
 - ``` UPDATE Shippers SET ShipperName = 'United Parcel Service' WHERE ShipperID = 4; ```
 - 9 ``` UPDATE Shippers SET ShipperName = 'USPO', Phone = '(123) 456-7890' WHERE ShipperID = 4; ```
