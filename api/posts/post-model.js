@@ -53,7 +53,13 @@ function update(id,{title,contents}) {
 }
 
 async function remove(id) {
-  const deletedPost = await getById(id)
-  await db("posts").where("id",id).delete()
-  return deletedPost
+    //test this way
+  //return "update wired"
+  //then ...
+  //what does it return?
+  //what to do to give back the deleted thing?
+  return db('posts').where('id', id).del()
+  // const deletedPost = await getById(id)
+  // await db("posts").where("id",id).delete()
+  // return deletedPost
 }
