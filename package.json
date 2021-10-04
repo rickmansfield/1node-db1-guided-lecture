@@ -1,0 +1,21 @@
+{
+  "name": "node-db1-guided",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "ketchup": "git fetch && git reset --hard origin/lecture",
+    "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run"
+  },
+  "repository": "https://github.com/LambdaSchool/node-db1-guided.git",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.95.7",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.12"
+  }
+}
